@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolling Games - Registro</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- emailjs -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_A9OnDToCTG3rqOf4qOPYB");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbarcolor navtext">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              class="logohead"
+              src="img/Epic_Catalogue_logo.png"
+              alt="Logo de Epic Catalogue"
+          /></a>
+
+          <button
+            class="navbar-toggler custom-toggler navbar-dark"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Cuenta
+                </a>
+                <div
+                  class="dropdown-menu navbarcolor navtext"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a
+                    class="dropdown-item lead-active"
+                    href="registro.html"
+                    id="registroNavbar"
+                    >Registro</a
+                  >
+                  <div class="dropdown-divider" id="dividerNav"></div>
+                  <a class="dropdown-item" href="login.html" id="loginNavbar"
+                    >Login</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="index.html"
+                    onclick="cerrarSesion()"
+                    id="cerrarsesionNavbar"
+                    >Cerrar Sesion</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="acerca_de.html">Acerca de</a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link lead-active d-none"
+                  href="admin.html"
+                  id="adminNavbar"
+                  >Administracion</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Empieza cuerpo de pagina registro -->
+    <main class="fondoPantalla min-vh-80">
+      <div class="col-8 shadow-none py-5 mx-auto my-3 rounded categoria">
+        <form onsubmit="formularioRegistro(event)" id="formRegistro">
+          <div class="row">
+            <!-- nombre -->
+            <div class="col-sm-12 col-md-6">
+              <label for="nombreRegistro" class="text-light">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombreRegistro"
+                placeholder="Juan"
+                onblur="requiereNombre(this)"
+              />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Debes agregar tu nombre</div>
+            </div>
+            <!-- apellido -->
+            <div class="col-sm-12 col-md-6">
+              <label for="exampleInputLastName1" class="text-light"
+                >Apellido</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="apellidoRegistro"
+                placeholder="Perez"
+                onblur="requiereApellido(this)"
+              />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Debes agregar tu apellido</div>
+            </div>
+          </div>
+          <!-- correo electronico -->
+          <div class="form-group mt-2">
+            <label for="mailRegistro" class="text-light"
+              >Correo electronico</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="mailRegistro"
+              aria-describedby="emailHelp"
+              placeholder="Correo electronico"
+              onblur="requiereMail(this)"
+            />
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Correo invalido</div>
+          </div>
+          <!-- contraseña -->
+          <div class="form-group">
+            <label for="passRegistro" class="text-light">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              id="passRegistro"
+              placeholder="***********"
+              onblur="requierePass(this)"
+            />
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">
+              La contraseña debe tener almenos 8 digitos
+            </div>
+          </div>
+          <!-- contraseña de nuevo -->
+          <!-- <div class="form-group">
+                    <label for="rePassRegistro" class="text-light">Repita contraseña</label>
+                    <input type="password" class="form-control" id="rePassRegistro" placeholder="***********" onblur="requiereRePass(this)">
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">La contraseña no coincide</div>
+                </div> -->
+          <!-- telenofo -->
+          <div class="form-group">
+            <label class="text-light">Telefono</label>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="0 + (cod de area) sin 15"
+              id="telefonoRegistro"
+              onblur="requiereNumero(this)"
+            />
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">
+              Debes agregar un numero de telefono valido
+            </div>
+          </div>
+          <!-- check -->
+          <div class="form-group form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="checkboxRegistro"
+              onblur="requiereCondiciones(this)"
+            />
+            <label class="form-check-label text-light" for="checkboxRegistro"
+              >Acepto los terminos y condiciones</label
+            >
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">
+              Debes aceptar los terminos y condiciones
+            </div>
+          </div>
+          <!-- boton enviar -->
+          <button type="submit" class="btn btn-primary" id="requiereRevisar">
+            Registrate
+          </button>
+        </form>
+        <!-- botones de redes sociales para registrarse -->
+        <div class="mt-5 text-center">
+          <h5 class="text-center text-light mb-4">
+            O tambien puedes registrarte con:
+          </h5>
+          <button
+            type="button"
+            onclick="window.location.href='error404.html'"
+            class="mx-auto col-xl-6 col-lg-8 col-md-8 btn btn-primary btn-lg btn-block rounded-pill"
+          >
+            Facebook
+          </button>
+          <button
+            type="button"
+            onclick="window.location.href='error404.html'"
+            class="mx-auto col-xl-6 col-lg-8 col-md-8 btn btn-danger btn-lg btn-block rounded-pill"
+          >
+            Google
+          </button>
+          <button
+            type="button"
+            onclick="window.location.href='error404.html'"
+            class="mx-auto col-xl-6 col-lg-8 col-md-8 col-md-6btn btn-info btn-lg btn-block rounded-pill"
+          >
+            Yahoo!
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="navbarcolor navtext text-center py-4">
+      <div class="col-8 py-1 mb-1 mt-1 text-center mx-auto">
+        <p class="lead">
+          <strong>Visitanos en nuestras redes sociales:</strong>
+        </p>
+      </div>
+      <div class="navtext text-center mb-4">
+        <div class="d-inline mr-4">
+          <a class="" href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+        </div>
+        <div class="d-inline">
+          <a class="" href="https://www.twitter.com" target="_blank"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+        </div>
+        <div class="d-inline ml-4">
+          <a class="" href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+        </div>
+      </div>
+      <p class="mb-0">&copy Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>

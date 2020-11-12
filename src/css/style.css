@@ -1,0 +1,651 @@
+/* COSAS DELFI */
+body {
+  font-family: "Alegreya Sans SC", sans-serif;
+  background-color: #292929;
+}
+#destacado {
+  background-color: #0886ea;
+  background-image: linear-gradient(180deg, #0886ea 27%, #2af598 100%);
+}
+#promo {
+  background-color: #085eea;
+  background-image: linear-gradient(90deg, #085eea 36%, #2af598 100%);
+}
+.categoria {
+  background-color: #131313;
+}
+.proximamente {
+  background-color: #131313;
+}
+.nombreIndex {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card {
+  background-color: #131313;
+  border-radius: 0%;
+  border-style: none;
+}
+.buscador {
+  border-style: none;
+}
+/* no esta andando 
+.buscador:hover{
+  background-color: #131313;
+} */
+.titulo {
+  background-color: #131313;
+}
+
+.descripcionIndex {
+  word-break: break-word;
+}
+/* FIN COSAS DELFI */
+/*NAVBAR Y GENERALES (Maxi?)*/
+.navbarcolor {
+  background-color: #303536;
+}
+
+.navbarcolor.dropdown-menu {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navtext a,
+p {
+  color: #ffffff;
+}
+
+.navtext a:hover {
+  color: #007dfc;
+  background-color: #303536;
+}
+
+.lead-active {
+  text-decoration: underline;
+}
+
+.custom-toggler.navbar-toggler {
+  border: 2px solid #ffffff;
+}
+
+.footer-custom {
+  width: 100%;
+}
+
+/*CONFIGURACION DE LOGIN*/
+.py-login {
+  padding-top: 1%;
+  padding-bottom: 5%;
+}
+
+.fondoLogin1 {
+  position: absolute;
+  background-color: #007dfc;
+  width: 85%;
+  height: 150px;
+  bottom: 0px;
+}
+
+.fondoLogin2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 435px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 50px solid #007dfc;
+  border-bottom: 100px solid #007dfc;
+  bottom: 28.1%;
+}
+
+.fondoLogin1-invalid {
+  position: absolute;
+  background-color: #ed3c3c;
+  width: 85%;
+  height: 150px;
+  bottom: 0px;
+}
+
+.fondoLogin2-invalid {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 435px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 50px solid #ed3c3c;
+  border-bottom: 100px solid #ed3c3c;
+  bottom: 28.1%;
+}
+
+.imgLogin {
+  position: relative;
+  z-index: 1;
+}
+
+.labelForm {
+  font-size: 20px;
+}
+
+/* FONDO DE PANTALLA */
+.fondoPantalla {
+  background-color: #292929;
+}
+
+/*CONFIGURACION ADMINISTRACION*/
+/*CONFIGURACION TABLA*/
+.min-vh-70 {
+  min-height: 70vh !important;
+}
+
+.min-vh-80 {
+  min-height: 80vh !important;
+}
+
+.min-vh-55 {
+  min-height: 55vh !important;
+}
+
+.min-vh-60{
+  min-height: 60vh;
+}
+
+.tableCustom {
+  color: white;
+  font-size: 18px;
+}
+
+th {
+  background-color: #080808;
+}
+
+tr:nth-child(even) {
+  background-color: #303536;
+}
+
+.sorter {
+  cursor: pointer;
+}
+
+#modalProducto {
+  padding: 0;
+}
+
+select {
+  appearance: none;
+}
+
+/*OVERFLOW CAMPO DESCRIPCION*/
+.tablaDescripcion {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tablaNombre {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tablaCategoria {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tablaCodigo {
+  min-width: 95px;
+}
+
+/*TABLA RESPONSIVE Y SCROLL BAR HORIZONTAL*/
+.table-responsive-custom {
+  /* display: block; */
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-responsive-custom::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.table-responsive-custom::-webkit-scrollbar:horizontal {
+  height: 5px;
+}
+
+.table-responsive-custom::-webkit-scrollbar-thumb {
+  background-color: #007dfc;
+}
+
+.table-responsive-custom::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+/*CONFIGURACION DE CHECKBOX*/
+/* Customize the label (the container) */
+.checkContainer {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  margin-bottom: auto;
+}
+
+/* Hide the browser's default checkbox */
+.checkContainer input {
+  position: absolute;
+  left: 35%;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0px;
+  left: 35%;
+  height: 33px;
+  width: 33px;
+  background-color: #7e7e7e;
+}
+
+/* On mouse-over, add a grey background color */
+.checkContainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkContainer input:checked ~ .checkmark {
+  background-color: #007dfc;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  left: 35%;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkContainer .checkmark:after {
+  left: 12px;
+  top: 8px;
+  width: 7px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*CONFIGURACION DE OPCIONES*/
+.btnSizeCustom {
+  width: 36.25px;
+  height: 33px;
+}
+
+.opciones {
+  min-width: 150px;
+}
+
+/*PAGINA DETALLE DE JUEGO*/
+/*BOTON VOLVER ATRAS*/
+.volverAtras:hover {
+  text-decoration: none;
+}
+
+.btnVolverAtras {
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+/*BOTON COMPRAR*/
+.btnComprar {
+  color: #007dfc;
+  background-color: #080808;
+  width: 250px;
+}
+
+.btnComprar p {
+  font-size: 25px;
+  color: white;
+}
+
+.fondoNegroOscuro {
+  background-color: #080808;
+}
+.pentagono {
+  width: 54px;
+  position: relative;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: #34495e transparent;
+}
+/*MEDIA QUERIES*/
+
+/*X-SMALL DEVICES PUBLICIDAD*/
+@media all and (max-width: 576px) {
+  .logohead {
+    width: 120px;
+  }
+
+  .sliderImg img {
+    object-fit: fill;
+    height: 200px;
+  }
+
+  .iframeDisplay iframe {
+    /* width: 350px; */
+    height: 196.88px;
+  }
+
+  .descripcionDetalles {
+    font-size: 17px;
+  }
+
+  .fondoLogin1 {
+    position: absolute;
+    background-color: #007dfc;
+    width: 90%;
+    height: 150px;
+    bottom: 0px;
+  }
+
+  .fondoLogin1-invalid {
+    position: absolute;
+    background-color: #ed3c3c;
+    width: 90%;
+    height: 150px;
+    bottom: 0px;
+  }
+
+  .fondoLogin2 {
+    position: absolute;
+    border-right: 200px solid transparent;
+    border-top: 0px solid transparent;
+    width: 90%;
+    border-left: 0px;
+    bottom: 150px;
+  }
+
+  .fondoLogin2-invalid {
+    position: absolute;
+    border-right: 200px solid transparent;
+    border-top: 0px solid transparent;
+    border-left: 0px;
+    bottom: 150px;
+    width: 90%;
+  }
+}
+
+/*SMALL DEVICES*/
+@media all and (min-width: 576px) and (max-width: 768px) {
+  .logohead {
+    width: 120px;
+  }
+
+  .sliderImg img {
+    object-fit: fill;
+    height: 250px;
+  }
+
+  .iframeDisplay iframe {
+    /* width: 450px; */
+    height: 253.13px;
+  }
+
+  .descripcionDetalles {
+    font-size: 17px;
+  }
+  .fondoLogin1 {
+    position: absolute;
+    background-color: #007dfc;
+    width: 85%;
+    height: 150px;
+    bottom: 0px;
+  }
+
+  .fondoLogin1-invalid {
+    position: absolute;
+    background-color: #ed3c3c;
+    width: 85%;
+    height: 150px;
+    bottom: 0px;
+  }
+
+  .fondoLogin2 {
+    border-right: 459px solid transparent;
+    border-top: 13px solid transparent;
+    border-left: 0px;
+    bottom: 150px;
+  }
+
+  .fondoLogin2-invalid {
+    border-right: 459px solid transparent;
+    border-top: 13px solid transparent;
+    border-left: 0px;
+    bottom: 150px;
+  }
+}
+
+/*MEDIUM DEVICES*/
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logohead {
+    width: 120px;
+  }
+
+  .sliderImg img {
+    object-fit: fill;
+    height: 350px;
+  }
+
+  .iframeDisplay iframe {
+    /* width: 600px; */
+    height: 337.5px;
+  }
+
+  .descripcionDetalles {
+    font-size: 17px;
+  }
+
+  .fondoLogin1 {
+    position: absolute;
+    background-color: #007dfc;
+    width: 85%;
+    height: 150px;
+    bottom: 18px;
+  }
+
+  .fondoLogin1-invalid {
+    position: absolute;
+    background-color: #ed3c3c;
+    width: 85%;
+    height: 150px;
+    bottom: 84px;
+  }
+
+  .fondoLogin2 {
+    border-right: 306px solid transparent;
+    border-top: 7px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 54px solid #007dfc;
+    bottom: 168px;
+  }
+
+  .fondoLogin2-invalid {
+    border-right: 306px solid transparent;
+    border-top: 7px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 54px solid #ed3c3c;
+    bottom: 234px;
+  }
+}
+
+/*LARGE DEVICES*/
+@media all and (min-width: 991px) and (max-width: 1200px) {
+  .logohead {
+    width: 120px;
+  }
+
+  .sliderImg img {
+    object-fit: fill;
+    height: 450px;
+  }
+
+  .iframeDisplay iframe {
+    height: 450px;
+  }
+
+  .descripcionDetalles {
+    font-size: 16.5px;
+  }
+
+  .fondoLogin2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 408px solid transparent;
+    border-top: 13px solid transparent;
+    border-left: 0px solid #007dfc;
+    border-bottom: 100px solid #007dfc;
+    bottom: 150px;
+  }
+
+  .fondoLogin2-invalid {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 408px solid transparent;
+    border-top: 13px solid transparent;
+    border-left: 0px solid #ed3c3c;
+    border-bottom: 100px solid #ed3c3c;
+    bottom: 150px;
+  }
+
+  .fondoLogin1 {
+    position: absolute;
+    background-color: #007dfc;
+    width: 85%;
+    height: 150px;
+    bottom: 0px;
+  }
+
+  .fondoLogin1-invalid {
+    position: absolute;
+    background-color: #ed3c3c;
+    width: 85%;
+    height: 150px;
+    bottom: 0px;
+  }
+
+  .descripcionIndex {
+    word-break: break-word;
+    font-size: 17px;
+  }
+}
+
+/*XTRA LARGE DEVICES*/
+@media all and (min-width: 1200px) {
+  .logohead {
+    width: 120px;
+  }
+
+  .sliderImg img {
+    object-fit: fill;
+    height: 650px;
+  }
+
+  .iframeDisplay iframe {
+    /* width: 100px; */
+    height: 562.5px;
+  }
+
+  .descripcionDetalles {
+    font-size: 20px;
+  }
+
+  .navtext a,
+  p {
+    color: #ffffff;
+    font-size: 18px;
+  }
+}
+
+/*CONFIGURACION DE PAGINA ERROR 404*/
+#wrapper{
+  position: relative;
+}
+
+#containerImgError {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#imagenError {
+  max-height: 350px;
+}
+
+#containerTxtError {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#containerErrorPadre{
+position: relative;
+height: 150px;
+}
+
+#containerImgErrorPadre{
+  position: relative;
+  bottom: 0px;
+}
+
+#headerAcercaDe {
+  height: 280px;
+  text-align: center;
+  position: relative;
+}
+
+.imgHeaderAcercaDe {
+  position: absolute;
+  z-index: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.personaAcercade {
+  border-radius: 50%;
+  max-height: 220px;
+  max-width: 220px;
+  width: 220px;
+  height: 220px;
+}
+
+.card-header-acercade {
+  color: white;
+  background-color: #085eea;
+  border: 0px;
+}
+
+.logoAcercaDe {
+  z-index: 1;
+  position: relative;
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolling Games - Acerca de</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbarcolor navtext">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              class="logohead"
+              src="img/Epic_Catalogue_logo.png"
+              alt="Logo de Epic Catalogue"
+          /></a>
+
+          <button
+            class="navbar-toggler custom-toggler navbar-dark"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Cuenta
+                </a>
+                <div
+                  class="dropdown-menu navbarcolor navtext"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a
+                    class="dropdown-item"
+                    href="registro.html"
+                    id="registroNavbar"
+                    >Registro</a
+                  >
+                  <div class="dropdown-divider" id="dividerNav"></div>
+                  <a class="dropdown-item" href="login.html" id="loginNavbar"
+                    >Login</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="index.html"
+                    onclick="cerrarSesion()"
+                    id="cerrarsesionNavbar"
+                    >Cerrar Sesion</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link lead-active" href="acerca_de.html">Acerca de</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link d-none" href="admin.html" id="adminNavbar"
+                  >Administracion</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Empieza Acerca de -->
+
+    <div class="fondoPantalla">
+      <div id="headerAcercaDe" class="">
+        <img
+          src="img/fondo-bind-acercade.jpg"
+          class="imgHeaderAcercaDe"
+          alt=""
+        />
+        <img class="logoAcercaDe"
+          src="img/Epic_Catalogue_logo.png"
+          alt="Logo Rolling Games"
+          width="280px"
+        />
+      </div>
+
+      <section class="container mt-5">
+        <div class="text-center">
+          <div>
+            <p class="text-light lead">
+              Rolling Games es una web creada por un grupo de 5 integrantes de
+              Rolling Code en tiempos de cuarentena. Nuestro interes es el poder
+              llegar con nuestros juegos a miles de jugadores y ser una gran
+              comunidad en este basto mundo de opciones para divertirse, tanto
+              con juegos para consolas como para PC.
+            </p>
+          </div>
+        </div>
+        <!--Acordeon acerca de-->
+        <div class="accordion my-3" id="sliderEntradaIntegrantes">
+          <div class="card border-dark rounded">
+            <div class="card-header " id="entradaIntegrantes">
+              <button
+                class="btn btn-block collapsed card-header-acercade"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseEntradaIntegrantes"
+                aria-expanded="false"
+                aria-controls="collapseEntradaIntegrantes"
+              >
+                CONOCÉ A LOS FUNDADORES
+              </button>
+            </div>
+            <div
+              id="collapseEntradaIntegrantes"
+              class="collapse"
+              aria-labelledby="entradaIntegrantes"
+              data-parent="#sliderEntradaIntegrantes"
+            >
+              <div class="card-body fondoPantalla text-center">
+                <!-- delfi -->
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                    <img
+                      src="img/delfi.jpg"
+                      class="personaAcercade"
+                      alt="Delfina"
+                    />
+                  </div>
+
+                  <div class="text-light col-12 col-sm-12 col-md-12 col-lg-8">
+                    <h4 class="mt-3 mb-1 text-left">Delfina Massa</h4>
+                    <p class="lead text-left">
+                      Estudiante Full Stack en Rolling Code School.
+                      Definitivamente multifacetica, le gusta el arte, el
+                      deporte y la ciencia. Estudio medicina 4 años hasta que
+                      entendio que no puede limitarse a una sola de sus ramas.
+                      Le gustan los idiomas, el montañismo, la matematica, y el
+                      arte en todas sus formas, sobre todo la danza.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Juan Arias -->
+                <div class="mt-5">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 order-2">
+                      <img
+                        src="img/juanarias.jpg"
+                        class="p-0 personaAcercade col-12 col-sm-12 col-md-12 col-lg-3 order-1 order-sm-1 order-md-1 order-lg-2"
+                        alt="..."
+                      />
+                    </div>
+
+                    <div
+                      class="text-light text-left col-12 col-sm-12 col-md-12 col-lg-8 order-2 order-sm-2 order-md-2 order-lg-1"
+                    >
+                      <h4 class="mb-1 mt-3">Juan Arias</h4>
+                      <p class="lead">
+                        Felizmente casado. Tecnico Superior en Administracion de
+                        Empresas y Estudiante de FullStack en Rolling Code
+                        School. Amante de las nuevas tecnologias, el diseño y la
+                        musica. Organizado a mas no poder pero con cierta de
+                        falta de concetración. Le encanta crecer y tambien
+                        ayudar a que los demas crezcan y alcancen su potencial.
+                        Futuro Software Developer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Luciano -->
+                <div class="mt-5">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                      <img
+                        src="img/luciano.jpg"
+                        class="mr-3 personaAcercade"
+                        alt="Luciano"
+                      />
+                    </div>
+
+                    <div
+                      class="text-light text-left col-12 col-sm-12 col-md-12 col-lg-8"
+                    >
+                      <h4 class="mt-3 mb-1">Luciano Gramajo</h4>
+                      <p class="lead">
+                        Estudiante Full Stack de Rolling Code, le gusta tanto
+                        los deportes como el pasar horas con los videojuegos, y
+                        mas si son de entrega de Xbox One, tanto multijugador
+                        como en campaña solitaria si hay una historia
+                        interesante.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- maxi -->
+                <div class="mt-5">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 order-2">
+                      <img
+                        src="img/maxi.jpg"
+                        width="100px"
+                        class="ml-3 personaAcercade"
+                        alt="Maximiliano Diaz"
+                      />
+                    </div>
+
+                    <div
+                      class="text-light text-left col-12 col-sm-12 col-md-12 col-lg-8 order-2 order-sm-2 order-md-2 order-lg-1"
+                    >
+                      <h4 class="mt-3 mb-1">Maximiliano Diaz</h4>
+                      <p class="lead">
+                        Licenciado en Administracion, estudiante Full Stack en
+                        Rolling Code School. Gusta de pasar sus días navegando
+                        en la web leyendo sobre distintos temas, como ser
+                        tecnología, programación, y bizarreadas, muchas
+                        bizarreadas. Coleccionista de memes y gamer en el tiempo
+                        libre. Nacido con una habilidad innata para procastinar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Juan DAMICHICI -->
+                <div class="mt-5">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                      <img
+                        src="img/juandamichici.jpg"
+                        class="mr-3 personaAcercade"
+                        alt="..."
+                      />
+                    </div>
+
+                    <div
+                      class="text-light text-left col-12 col-sm-12 col-md-12 col-lg-8"
+                    >
+                      <h4 class="mt-3 mb-1">Juan D'amichici</h4>
+                      <p class="lead">
+                        Mecanico automotriz, estudiante de full stack en rolling
+                        code school. Amante de los deportes y de los videos
+                        juegos. Papa de un nene super tierno.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container navbarcolor my-4 p-4 rounded text-center">
+        <div class="my-2">
+          <div class="row">
+            <div class="col-12 col-md-6 text-light">
+              <div>
+                <h5 class="text-info">Oficina Central de Epic Categorie</h5>
+                <p>Argentina</p>
+                <p>Tucumán, San Miguel de Tucumán</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 text-light">
+              <div>
+                <h5 class="text-info">Investigación y Desarrollo</h5>
+                <p>Argentina, Tucumán</p>
+              </div>
+              <div>
+                <h5 class="text-info">Tutores</h5>
+                <p>Emilse Arias</p>
+                <p>Jonathan P.</p>
+              </div>
+            </div>
+          </div>
+          <div class="border mt-2 mb-5"></div>
+          <div>
+            <p>
+              El uso de este sitio web constituye la aceptación de los
+              <a class="text-primary" href="#">Términos y Condiciones</a> y
+              <a class="text-primary" href="#"> la Política de Privacidad.</a>
+              Todos los derechos de autor, marcas de comercio, marcas de
+              servicio pertenecen a los propietarios correspondientes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <div class="container fondoNegroOscuro text-center my-4 p-2 rounded">
+        <div class="my-4">
+          <div>
+            <h3 class="text-center text-primary">Contacto</h3>
+
+            <p>
+              ¿Es usted periodista, quiere trabajar con nosotros o ponerse en
+              contacto con nosotros?
+            </p>
+            <p>Haga clic aquí para ponerse en contacto con nosotros!</p>
+            <a href="contacto.html"><i class="far fa-3x fa-edit"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <footer class="navbarcolor navtext text-center py-4">
+        <div class="col-8 py-1 mb-1 mt-1 text-center mx-auto">
+          <p class="lead">
+            <strong>Visitanos en nuestras redes sociales:</strong>
+          </p>
+        </div>
+        <div class="navtext text-center mb-4">
+          <div class="d-inline mr-4">
+            <a class="" href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+          </div>
+          <div class="d-inline">
+            <a class="" href="https://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+          </div>
+          <div class="d-inline ml-4">
+            <a class="" href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+          </div>
+        </div>
+        <p class="mb-0">&copy Todos los derechos reservados</p>
+      </footer>
+    </div>
+  </body>
+</html>
