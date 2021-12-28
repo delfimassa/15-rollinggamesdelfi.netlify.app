@@ -344,7 +344,7 @@ select {
 /*X-SMALL DEVICES PUBLICIDAD*/
 @media all and (max-width: 576px) {
   .logohead {
-    width: 120px;
+    width: 40px;
   }
 
   .sliderImg img {
@@ -399,7 +399,7 @@ select {
 /*SMALL DEVICES*/
 @media all and (min-width: 576px) and (max-width: 768px) {
   .logohead {
-    width: 120px;
+    width: 40px;
   }
 
   .sliderImg img {
@@ -449,7 +449,7 @@ select {
 /*MEDIUM DEVICES*/
 @media all and (min-width: 768px) and (max-width: 991px) {
   .logohead {
-    width: 120px;
+    width: 40px;
   }
 
   .sliderImg img {
@@ -502,7 +502,7 @@ select {
 /*LARGE DEVICES*/
 @media all and (min-width: 991px) and (max-width: 1200px) {
   .logohead {
-    width: 120px;
+    width: 40px;
   }
 
   .sliderImg img {
@@ -565,7 +565,7 @@ select {
 /*XTRA LARGE DEVICES*/
 @media all and (min-width: 1200px) {
   .logohead {
-    width: 120px;
+    width: 40px;
   }
 
   .sliderImg img {
