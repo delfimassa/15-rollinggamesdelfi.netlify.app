@@ -338,7 +338,7 @@ select {
 /*X-SMALL DEVICES PUBLICIDAD*/
 @media all and (max-width: 576px) {
   .logohead {
-    width: 55px;
+    width: 40px;
   }
 
   .sliderImg img {
@@ -393,7 +393,7 @@ select {
 /*SMALL DEVICES*/
 @media all and (min-width: 576px) and (max-width: 768px) {
   .logohead {
-    width: 55px;
+    width: 40px;
   }
 
   .sliderImg img {
